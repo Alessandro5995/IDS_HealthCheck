@@ -1,0 +1,128 @@
+.SO_resource_form{
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    max-width: 500px;
+    height: 550px;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid #051339;
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgb(139, 231, 236), rgba(125, 145, 195, 0.95));
+    color: #051339;
+    box-shadow: 0 0 25px rgb(35, 165, 141);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.AppContrastoElevato .SO_resource_form{
+    display: flex;
+    flex-direction: column;
+    width: 35vh;
+    max-width: 500px;
+    height: 550px;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid #051339;
+    background: linear-gradient(100deg, rgb(0, 4, 12), rgb(1, 11, 32));
+    color: #c2efe1;
+    box-shadow: 0 0 25px rgb(47, 3, 92);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.so_resources_title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #051339;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #051339;
+    padding-bottom: 2px;
+}
+
+.AppContrastoElevato .so_resources_title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2efe1;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #c2efe1;
+    padding-bottom: 2px;
+}
+
+
+.toggle_switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+
+.toggle_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #051339;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.AppContrastoElevato .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #18b4ba;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+
+input:checked + .slider {
+    background-color: #9642f1;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.so_resource_key {
+    font-weight: bold;
+    color: #051339;
+}
+
+.AppContrastoElevato .so_resource_key {
+    font-weight: bold;
+    color: #c2efe1;
+}
+
+.so_resource_item {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
