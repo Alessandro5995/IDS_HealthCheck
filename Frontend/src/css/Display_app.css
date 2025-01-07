@@ -1,0 +1,133 @@
+.Display_app {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 900px;
+    height: 550px;
+    margin: 10px;
+    border: 5px solid #051339;
+    border-radius: 20px;
+    overflow: hidden; 
+    padding: 20px;
+    align-self: flex-start;
+    background: linear-gradient(145deg, rgb(139, 231, 236), rgba(125, 145, 195, 0.95));
+    box-shadow: 0 0 25px rgb(35, 165, 141);
+    position: relative; 
+}
+
+.high-contrast .Display_app{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 900px;
+    height: 550px;
+    margin: 10px;
+    border: 5px solid #051339;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    align-self: flex-start;
+    background: linear-gradient(100deg, rgb(0, 4, 12), rgb(1, 11, 32));
+    box-shadow: 0 0 25px rgb(47, 3, 92);
+    position: relative;
+}
+
+
+.Display_app > * {
+    margin-bottom: 15px;
+}
+
+.Display_app > *:last-child {
+    margin-bottom: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #051339;
+}
+
+.AppContrastoElevato .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #8be7ec;
+}
+
+.label_style {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #051339;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.AppContrastoElevato .label_style {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #c2efe1;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.console-content {
+    padding: 15px;
+    max-height: 800px;
+    overflow-y: auto; 
+}
+
+.message {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 0.5px solid #439c82;
+    word-wrap: break-word;
+    margin: 0;
+    color: black;
+}
+
+.AppContrastoElevato .message {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 0.5px solid #439c82;
+    word-wrap: break-word;
+    margin: 0;
+    color: white;
+}
+
+
+.message:hover {
+    background-color: #6083a7;
+}
+
+.clear-button {
+    background-color: #051339;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.AppContrastoElevato .clear-button {
+    background-color: #c2efe1;
+    color: #051339;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.AppContrastoElevato .clear-button:hover {
+    background-color: #23a58d;
+}
